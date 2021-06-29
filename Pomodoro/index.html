@@ -8,9 +8,15 @@
     <title>Pomodoro</title>
 </head>
 <body>
-    <h1 style="text-align: center;">Pomodoro Clock</h1>
+    <h1 >Pomodoro Clock</h1>
     <div class="clock-container">
-
+        <h1 id="clock">15:00</h1><br>
+        <button onclick="startTimer(event);" id="start-button">START</button>
     </div>
+    <label for="quantity">Set time!</label>>
+    <div class="button-container">
+        <input type="number" id="quantity" min=10 max=25 value=10>
+    </div>
+    <script src="quiz.js"></script>
 </body>
 </html>
