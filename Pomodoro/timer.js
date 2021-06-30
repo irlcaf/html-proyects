@@ -32,10 +32,11 @@ function interval(){
 
 let finishInterval = () => {
     clearInterval(timerInterval);
+
     isBreak = !isBreak;
 }
 let initSession = (e) => {
-    TIME_LIMIT = document.getElementById("quantity").value*10;
+    TIME_LIMIT = document.getElementById("quantity").value*60;
     finishInterval(timerInterval);
     interval();
 
