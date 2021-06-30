@@ -25,7 +25,6 @@ function interval(){
         document.getElementById("clock").innerHTML = formatTime(timeLeft);
 
         if(timeLeft === 0){
-            isBreak = !isBreak;
             finishInterval();
         }
     }, 1000)
@@ -33,6 +32,7 @@ function interval(){
 
 let finishInterval = () => {
     clearInterval(timerInterval);
+    isBreak = !isBreak;
 }
 let initSession = (e) => {
     TIME_LIMIT = document.getElementById("quantity").value*10;
