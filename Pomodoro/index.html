@@ -9,14 +9,20 @@
 </head>
 <body>
     <h1 >Pomodoro Clock</h1>
-    <div class="clock-container">
-        <h1 id="clock">15:00</h1><br>
-        <button onclick="startTimer(event);" id="start-button">START</button>
+    <div class="main-container">
+        <div class="clock-container">
+            <h1 id ="session"></h1><br>
+            <h1 id="clock"></h1><br>
+        </div>
+        <div class="button-container">
+            <button onclick="initSession(event);" class="start-button">START</button><br>
+            <button onclick="contSession(event);" class="start-button">CONTINUE</button>
+        </div>
     </div>
     <label for="quantity">Set time!</label>>
-    <div class="button-container">
-        <input type="number" id="quantity" min=10 max=25 value=10>
+    <div class="input-container">
+        <input  type="number" id="quantity" min=1 max=25 value=10>
     </div>
-    <script src="quiz.js"></script>
+    <script src="timer.js"></script>
 </body>
 </html>
